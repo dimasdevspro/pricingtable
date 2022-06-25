@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./main.js"></script>
+    <title>Pricing Table</title>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Conheça nossos planos</h1>
+      <p>
+        Conheça nossas soluções e escolha o plano idela para o seu próximo
+        projeto.
+      </p>
+    </div>
+    <div class="pricing-tables">
+      
+      <div onclick='freeTableSelected()' class="free-table">
+        <div class="free-title"><p>Free</p></div>
+        <div class="price">
+          <p id="price">R$ 00,</p>
+          <p id="price-cents">00</p>
+          <span>/mês</span>
+        </div>
+        <p id="description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <ul>
+          <li><img src="./assets/check.svg" alt="" />Lorem ipsum dolor</li>
+          <li><img src="./assets/check.svg" alt="" />Lorem ipsum dolor</li>
+        </ul>
+        <div class="button free">
+          <button>ASSINAR</button>
+        </div>
+      </div>
+      <div onclick='basicTableSelected()' class="basic-table">
+        <div class="basic-title">
+          <p>Básico</p>
+          <p>Popular</p>
+        </div>
+        <div class="price">
+          <p id="price">R$ 29,</p>
+          <p id="price-cents">90</p>
+          <span>/mês</span>
+        </div>
+        <p id="description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <ul>
+          <li><img src="./assets/check.svg" alt="" />Lorem ipsum dolor</li>
+          <li><img src="./assets/check.svg" alt="" />Lorem ipsum dolor</li>
+          <li><img src="./assets/check.svg" alt="" />Lorem ipsum dolor</li>
+        </ul>
+        <div class="button basic">
+          <button>ASSINAR</button>
+        </div>
+      </div>
+      <div onclick='profissionalTableSelected()' class="profissional-table">
+        <div class="profissional-title">
+          <p>Profissional</p>
+        </div>
+        <div class="price">
+          <p id="price">R$ 59,</p>
+          <p id="price-cents">90</p>
+          <span>/mês</span>
+        </div>
+        <p id="description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <ul>
+          <li><img src="./assets/check.svg" alt="" />Lorem ipsum dolor</li>
+          <li><img src="./assets/check.svg" alt="" />Lorem ipsum dolor</li>
+          <li><img src="./assets/check.svg" alt="" />Lorem ipsum dolor</li>
+          <li><img src="./assets/check.svg" alt="" />Lorem ipsum dolor</li>
+        </ul>
+        <div class="button profissional">
+          <button>ASSINAR</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
