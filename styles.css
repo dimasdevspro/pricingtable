@@ -15,6 +15,153 @@
   font-family: "Opens Sans", sans-serif;
 }
 
+@media (max-width: 800px){
+  
+body {
+  background-color: var(--page-background);
+}
+
+.banner {
+  background-color: var(--blue);
+  height: 28.125rem;
+  text-align: center;
+}
+
+.banner h1 {
+  padding-top: 6.25rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.banner p {
+  padding-top: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: normal;
+  color: #ffffff;
+
+  
+  margin: 0 auto;
+}
+.pricing-tables {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.free-table ul,
+.basic-table ul,
+.profissional-table ul {
+  list-style: none;
+}
+
+.free-table ul li,
+.basic-table ul li,
+.profissional-table ul li {
+  margin-bottom: 1rem;
+}
+.free-table,
+.basic-table,
+.profissional-table {
+  position: relative;
+  top: -11rem;
+  width: 22.1875rem;
+  height: 29.375rem;
+  margin: 1.25rem;
+  background-color: #ffffff;
+  border-radius: 0.3125rem;
+  padding: 1.875rem;
+  cursor: pointer;
+}
+
+.free-title,
+.basic-title,
+.profissional-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.free-title p,
+.basic-title p,
+.profissional-title p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #1e2338;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.625rem;
+}
+
+#price {
+  font-size: 2.375rem;
+}
+
+#price-cents {
+  font-size: 1.1875rem;
+}
+
+.price span {
+  font-size: 1.125rem;
+  color: var(--gray);
+}
+
+#description {
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin-bottom: 2.5625rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.button.free {
+  margin-top: 9rem;
+}
+
+.button.basic {
+  margin-top: 6.5rem;
+}
+
+.button.profissional {
+  margin-top: 4rem;
+}
+
+button {
+  width: 18.5rem;
+  height: 3.0625rem;
+  background-color: #ffffff;
+  border: 1px solid var(--blue);
+  border-radius: 0.625rem;
+  font-family: 'Opens Sans', sans-serif;
+  font-size: 1.125rem;
+  color: var(--blue);
+}
+
+button:hover {
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+.table-selected {
+  border-bottom: 1px solid var(--yellow);
+ transition: all .8s;
+}
+
+
+}
+
+@media (min-width: 801px){
+  
 body {
   background-color: var(--page-background);
 }
@@ -151,4 +298,7 @@ button:hover {
 .table-selected {
   border-bottom: 1px solid var(--yellow);
  transition: all .8s;
+}
+
+
 }
